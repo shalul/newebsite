@@ -1,0 +1,23 @@
+img{
+    padding-bottom: 0%;
+    padding-right: 30%;
+}
+
+
+.contact{
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(62, 54, 89);
+    padding: 0%
+}
+
+h5{
+    font-size: 50px;
+    color: rgb(62, 54, 89);
+    padding: 0%;
+}
+
+form{
+    padding: 0%;
+    text-Align: left;
+}

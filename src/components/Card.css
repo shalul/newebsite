@@ -1,0 +1,140 @@
+.projects{
+    width: 100%;
+    height: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    object-fit: contain;
+    padding: 0px;
+    background-color: #242424;
+    transition: 1s;
+    text-align: center;
+
+}
+
+.project {
+  position: relative;
+  background-color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.project h2 {
+	font-size: 45px;
+	font-weight: 900;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+.project span {
+  content: "\2193";
+  align-items: center;
+  color:#B8B8B8;
+  padding-left: 50%;
+  font-size: 45px;
+}
+
+.project h3 {
+	font-size: 45px;
+  text-align: center;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 10%;
+  padding-bottom: 50px;
+}
+.project p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+}
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.proj-imgbx::before {
+  content: "";
+  background: rgb(221, 166, 255);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+  padding-bottom: 10px;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(81, 81, 81);
+  align-items: center;
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
+
+.projects-des{
+  color: white;
+  padding-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  text-align: center;
+}
+
+.projecth3{
+  color: white;
+  padding-top: 10%;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+
+

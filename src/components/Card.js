@@ -39,21 +39,16 @@ function Projects(){
                           <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                             <Tab.Pane eventKey="first">
                               <Row>
-                                {
-                                  projects.map((project, index) => {
-                                    return (
-                                      <ProjectCard
-                                        key={index}
-                                        {...project}
-                                        />
-                                    )
-                                  })
-                                }
+                              {
+                                projects.map((project, index) => (
+                                  <Row key={index} className={`zigzag-row ${index % 2 === 0 ? 'left' : 'right'}`}>
+                                    <div className="card-wrapper">
+                                      <ProjectCard {...project} />
+                                    </div>
+                                  </Row>
+                                ))
+                              }
                               </Row>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="section">
-                              <p> Want to see more? Get in touch!</p>
-                              <span>&#8595;</span>
                             </Tab.Pane>
                           </Tab.Content>
                         </Tab.Container>

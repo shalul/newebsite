@@ -8,7 +8,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 function Hero(){
     const [loopNum, setLoopNum] = useState(0);
     const[isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["A Student", "An Artist", "A Coder", "Shalini Krish."];
+    const toRotate = ["A Student", "An Artist", "A Coder", "Shalini Krish ✌️."];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random()* 100);
     const period = 500;
@@ -28,7 +28,7 @@ function Hero(){
 
         setText(updateText);
 
-        if(fullText === "Shalini Krish."){
+        if(fullText === "Shalini Krish ✌️."){
             return 0;
         }
 
@@ -51,7 +51,7 @@ function Hero(){
             <div className = 'hero-container'>
                     <h1>{`Hi, I'm `} <span className = "wrap">{text}</span></h1>
                     <div className="lineUp">
-                        <p>I'm originally from the Bay Area, California and I'm a sophomore at the University of Michigan.<br/>
+                        <p>I'm originally from the Bay Area, California and I'm a senior at the University of Michigan.<br/>
 This is a website showcasing some of my experience in the world of computer science, <br/>as well as a bit of my personality!</p>
                         <h2>(scroll for more)</h2>
                     </div>

@@ -1,5 +1,5 @@
 import '../App.css';
-import './Hero.css';
+import './About.css';
 import collage from '../images/collage-pic.png';
 import React, {useState, useEffect} from 'react';
 import Navbar from './Navbar';

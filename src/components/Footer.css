@@ -1,23 +1,44 @@
-img{
-    padding-bottom: 0%;
-    padding-right: 30%;
-}
-
 
 .contact{
     font-size: 50px;
     font-family: 'Quicksand', sans-serif;
-    color: rgb(62, 54, 89);
-    padding: 0%
+    padding: 0%;
+    text-Align: center;
+    background-color: rgb(62, 54, 89);
+    padding-top: 10%;
 }
 
 h5{
     font-size: 50px;
-    color: rgb(62, 54, 89);
+    color: #f1eae0;
     padding: 0%;
 }
 
 form{
     padding: 0%;
-    text-Align: left;
+    text-Align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+textarea, input, button {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-color: #afa7ca;
+}
+
+button {
+    background-color: #afa7ca;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font: #f1eae0;
+    border-radius: 10%
+}
+
+.contact {
+    padding: 5%;
 }

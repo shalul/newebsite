@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
-import {Button} from './Button';
+import { Link as ScrollLink } from 'react-scroll';
 import './Navbar.css';
+import logo from "../images/logo.png";
 
 function Navbar() {
     const [click, setClick] = useState(false); 
@@ -39,27 +39,61 @@ function Navbar() {
     <>
     <nav className= {scrolled ? "scrolled" : "navbar"}>
         <div className="navbar-container">
-            <Link to="/" className={scrolled? "navbar-logo-2" : "navbar-logo"}>
-                SHALU <i className="fab fa-typo3"></i>
-            </Link>
+            <ScrollLink 
+                to="/" 
+                smooth={true} 
+                duration={50} 
+                className={scrolled? "navbar-logo-2" : "navbar-logo"}
+                onClick={closeMobileMenu}
+            >
+                <img src={logo} alt="Logo" className="footer-logo" /> SHALU
+            </ScrollLink>
             <div className='menu-icon' onClick = {handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
             </div>
             <ul className= {click ? 'nav-menu active' : 'nav-menu'}>
                 <li className = 'nav-item' >
-                    <Link activeClass="active" className={scrolled? 'nav-links-2' : 'nav-links'} onClick={closeMobileMenu} smooth spy to="/about">
-                     About Me
-                    </Link>
+                <ScrollLink
+                    to="about"
+                    smooth={true}
+                    duration={50}
+                    className={scrolled ? 'nav-links-2' : 'nav-links'}
+                    onClick={closeMobileMenu}
+                >
+                    About Me
+                </ScrollLink>
                 </li>
                 <li className = 'nav-item'>
-                    <Link to ='/projects' className={scrolled? 'nav-links-2' : 'nav-links'} onClick={closeMobileMenu}>
-                        Projects
-                    </Link>
+                <ScrollLink
+                    to="projects"
+                    smooth={true}
+                    duration={50}
+                    className={scrolled ? 'nav-links-2' : 'nav-links'}
+                    onClick={closeMobileMenu}
+                >
+                    Projects
+                </ScrollLink>
                 </li>
                 <li className = 'nav-item'>
-                    <Link to ='/contact-me' className={scrolled? 'nav-links-2' : 'nav-links'} onClick={closeMobileMenu}>
-                        Contact Me
-                    </Link>
+                <ScrollLink
+                    to="contact-me"
+                    smooth={true}
+                    duration={50}
+                    className={scrolled ? 'nav-links-2' : 'nav-links'}
+                    onClick={closeMobileMenu}
+                >
+                    Contact Me
+                </ScrollLink>
+                </li>
+                <li className = 'nav-item'>
+                    <a
+                        href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:fcf43ae6-dfce-42b9-9fc5-b87a906e145a"
+                        className={scrolled ? 'nav-links-2' : 'nav-links'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                    Resume
+                    </a>
                 </li>
             </ul>
         </div>

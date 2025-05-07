@@ -40,6 +40,8 @@
   font-weight: 900;
   background-color: rgb(62, 54, 89);
   flex-direction: column;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 .project h2 {
 	font-size: 45px;

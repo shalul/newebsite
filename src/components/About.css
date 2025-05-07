@@ -91,6 +91,7 @@ h2{
     padding: 0px;
     background-color: rgb(62, 54, 89);
     transition: 1s;
+    padding-top: 10%; 
   }
 
   .about-text{

@@ -51,9 +51,10 @@ function Contact (){
                         <Col sm={12} className="px-1">
                             <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)} />
                         </Col>
-                        <Col sm={12} className="px-1">
-                            <button type="submit"><span>{buttonText}</span></button>
-                        </Col>
+                        <button type="submit" className="contact-button">
+                        <span>{buttonText}</span>
+                        </button>
+
                         {status.message && (
                             <Col>
                                 <p className={status.success === false ? "danger" : "success"}>{status.message}</p>

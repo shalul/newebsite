@@ -1,25 +1,46 @@
 .projects{
-    width: 100%;
+    width: 50%;
     height: 10;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: left;
     object-fit: contain;
     padding: 0px;
-    background-color: #242424;
     transition: 1s;
     text-align: center;
+    padding-top: 10%;
+}
 
+.card-wrapper {
+  width: 60%; /* adjust as needed: 40–80% */
+  max-width: 700px;
+  text-align: center;
+}
+
+.zigzag-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 50;
+}
+
+.zigzag-row.left {
+  flex-direction: row;
+}
+
+.zigzag-row.right {
+  flex-direction: row-reverse;
 }
 
 .project {
-  position: relative;
-  background-color: black;
+  position: center;
   font-family: 'Quicksand', sans-serif;
   font-weight: 900;
-  display: flex;
-  flex: 1;
+  background-color: rgb(62, 54, 89);
   flex-direction: column;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 .project h2 {
 	font-size: 45px;
@@ -69,7 +90,7 @@
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 24px;
+  height: 500px;
 }
 .proj-imgbx::before {
   content: "";
@@ -92,10 +113,12 @@
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  color: rgb(62, 54, 89);
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
+  text-align: center;
 }
 .proj-txtx h4 {
   font-size: 30px;
@@ -103,14 +126,14 @@
   letter-spacing: 0.8px;
   line-height: 1.1em;
   padding-bottom: 10px;
+  text-align: center;
 }
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
-  color: rgb(81, 81, 81);
-  align-items: center;
+  color: rgb(62, 54, 89);
 }
 .background-image-right {
   top: 20%;

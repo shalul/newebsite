@@ -1,9 +1,9 @@
-import{useState} from 'react';
+import{useRef, useState} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import contact from '../images/cntat.jpeg';
 import './Footer.css';
+import emailjs from 'emailjs-com';
 
 function Contact (){
     const formInitial = {
@@ -25,57 +25,77 @@ function Contact (){
         })
     }
 
-    const handleSubmit = () =>{
+    const formRef = useRef();
 
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        setButtonText('Sending...');
+
+        emailjs.send('service_sy8ncuv','template_l1nymee',{
+            name: formDetails.firstName,
+            from_name: formDetails.firstName,
+            from_last: formDetails.lastName,
+            phone: formDetails.phone,
+            message: formDetails.message,
+            reply_to: formDetails.email,
+        }, 'ikTlwjrZgq1vy6xxL').then((result) => {
+            console.log('Email to you sent:', result.text);
+            emailjs.send(
+                'service_sy8ncuv', 
+                'template_1ulkspn', 
+                {email:formDetails.email}, 
+                'ikTlwjrZgq1vy6xxL').then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    setButtonText("Sent!");
+                    setForm(formInitial);
+                },(error) => {
+                    console.log('FAILED...', error);
+                    setButtonText("Error, try again later!");
+                },
+            );
+        });
     }
+
     return(
-        <tr>
-            <td>
-            <img src ={contact} alt = 'about' width = {1000} height = {1000}></img>
-            </td>
-            <td>
         <div className='contact' id='connect'>
-            <Container>
-                <Row>
-                    <h5>Contact Me</h5>
-                    <form onSubmit={handleSubmit}/>
-                    <Col sm = {6} className = "px-1">
-                        
-                        <form>
-                            <Row>
-                                <Col sm = {0} className = "px-1">
-                                    <input type={"text"} value = {formDetails.firstName} placeholder="First Name" onChange ={(e) => onFormUpdate('firstName', e.target.value)}/>
-                                </Col>
-                                <Col sm = {6} className = "px-1">
-                                    <input type={"text"} value = {formDetails.lastName} placeholder="Last Name" onChange ={(e) => onFormUpdate('lastName', e.target.value)}/>
-                                </Col>
-                                <Col sm = {6} className = "px-1">
-                                    <input type={"email"} value = {formDetails.email} placeholder="Email Address" onChange ={(e) => onFormUpdate('email', e.target.value)}/>
-                                </Col>
-                                <Col sm = {6} className = "px-1">
-                                    <input type={"telephone"} value = {formDetails.telephone} placeholder="Phone Number" onChange ={(e) => onFormUpdate('phone', e.target.value)}/>
-                                </Col>
-                                <Col>
-                                    <textarea row = "6" value = {formDetails.message} placeholder = "Message" onChange ={(e) => onFormUpdate('message', e.target.value)}/>
-                                    <button type = "submit"><span>{buttonText}</span></button>
-                                </Col>
-                                {
-                                    status.message &&
-                                    <Col>
-                                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                                    </Col>
-                                }
-                            </Row>
-                            
-                        </form>
-                    </Col>
-                </Row>
-            </Container>
-                    
-                   
-        </div>
-        </td>
-        </tr>
+    <Container>
+        <Row>
+            <h5>Interested? Contact Me</h5>
+            <Col sm={12} className="px-1"> {/* Full width column for form */}
+                <form ref={formRef} onSubmit={handleSubmit}>
+                    <Row>
+                        <Col sm={6} className="px-1">
+                            <input type="text" name="from_name" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                        </Col>
+                        <Col sm={6} className="px-1">
+                            <input type="text" name="from_last" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
+                        </Col>
+                        <Col sm={6} className="px-1">
+                            <input type="email" name="reply_to" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                        </Col>
+                        <Col sm={6} className="px-1">
+                            <input type="tel" name="phone" value={formDetails.phone} placeholder="Phone Number" onChange={(e) => onFormUpdate('phone', e.target.value)} />
+                        </Col>
+                        <Col sm={12} className="px-1">
+                            <textarea rows="6" name="message" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)} />
+                        </Col>
+                        <button type="submit" className="contact-button">
+                        <span>{buttonText}</span>
+                        </button>
+
+                        {status.message && (
+                            <Col>
+                                <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                            </Col>
+                        )}
+                    </Row>
+                </form>
+            </Col>
+        </Row>
+    </Container>
+</div>
+
     )
 }
 

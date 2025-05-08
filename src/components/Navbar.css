@@ -1,13 +1,12 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+
+img{
+  margin-right: 15px;
+}
 .navbar {
-    background: white;
+    background: #fcf9f5;
     height: 90px;
-    width: '100vw';
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,12 +27,17 @@
     align-items: center;
     height: 80px;
     max-width: 1000px;
+    padding-top: 10px;
+  }
+
+  .navbar-logo:hover{
+    color: rgb(221, 166, 255);
   }
   
   .navbar-logo {
-    color: black;
+    color: rgb(62, 54, 89);
     justify-self: start;
-    margin-left: 0px;
+    margin-right: 10px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -42,7 +46,7 @@
   }
 
   .navbar-logo-2 {
-    color: white;
+    color: #fcf9f5;
     justify-self: start;
     margin-left: 0px;
     cursor: pointer;
@@ -52,13 +56,11 @@
     align-items: center;
   }
 
- 
-
 .scrolled{
     padding : 0px 0;
     background-color: rgb(62, 54, 89);
     height: 90px;
-    width: '100vw';
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,8 +70,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    transition: 0.5s;
-    color: white;
+    color: #fcf9f5;
   }
   
   .fa-typo3 {
@@ -92,7 +93,7 @@
   }
   
   .nav-links {
-    color: black;
+    color: rgb(62, 54, 89);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -102,7 +103,7 @@
   }
 
   .nav-links-2 {
-    color: white;
+    color: #fcf9f5;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -113,8 +114,7 @@
   
 
   .nav-links:hover {
-    border-bottom: 4px solid rgb(221, 166, 255);
-    transition: all 0.2s ease-out;
+    color: rgb(221, 166, 255);
   }
   
   .fa-bars {

@@ -9,10 +9,18 @@ import Projects from '../Card';
 function Home(){
     return (
         <>
-            <Hero/>
-            <About/>
-            <Projects/>
-            <Contact/>
+            <div id="/">
+                <Hero/>
+            </div>
+            <div id="about">
+                <About/>
+            </div>
+            <div id="projects">
+                <Projects/>
+            </div>
+            <div id="contact-me">
+                <Contact/>
+            </div>
             <Footer/>
         </>
     );

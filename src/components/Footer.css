@@ -1,23 +1,56 @@
-img{
-    padding-bottom: 0%;
-    padding-right: 30%;
-}
-
-
-.contact{
+.contact {
     font-size: 50px;
     font-family: 'Quicksand', sans-serif;
-    color: rgb(62, 54, 89);
-    padding: 0%
+    text-align: center;
+    background-color: rgb(62, 54, 89);
+    padding-top: 10%;
+    padding: 5%;
 }
 
-h5{
+h5 {
     font-size: 50px;
-    color: rgb(62, 54, 89);
+    color: #fcf9f5;
     padding: 0%;
 }
 
-form{
+form {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
     padding: 0%;
-    text-Align: left;
+}
+
+textarea, input, button {
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-color: #afa7ca;
+    border-radius: 5px;
+}
+
+/* Lavender glow when focused */
+textarea:focus, input:focus {
+    outline: none;
+    border-color: #d6c3f3;
+    box-shadow: 0 0 8px 2px #d6c3f3;
+}
+
+/* Default button style */
+.contact-button {
+    background-color: #afa7ca;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10%;
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Invert colors on hover */
+.contact-button:hover {
+    background-color: white;
+    color: #afa7ca;
 }

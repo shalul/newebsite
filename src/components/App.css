@@ -1,21 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-section {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  overflow-x: hidden;      /* ✅ prevents side-scrolling */     /* ✅ keeps vertical scrolling */
-}
-
-
 .App {
   text-align: center;
+  background-color: rgb(62, 54, 89);
 }
 
 .App-logo {
@@ -30,7 +15,7 @@ html {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(62, 54, 89);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,4 +36,8 @@ html {
   to {
     transform: rotate(360deg);
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

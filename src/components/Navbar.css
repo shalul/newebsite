@@ -29,6 +29,10 @@ img{
     max-width: 1000px;
     padding-top: 10px;
   }
+
+  .navbar-logo:hover{
+    color: rgb(221, 166, 255);
+  }
   
   .navbar-logo {
     color: rgb(62, 54, 89);
@@ -110,8 +114,7 @@ img{
   
 
   .nav-links:hover {
-    border-bottom: 4px solid rgb(221, 166, 255);
-    transition: all 0.2s ease-out;
+    color: rgb(221, 166, 255);
   }
   
   .fa-bars {

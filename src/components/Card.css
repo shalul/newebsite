@@ -6,7 +6,6 @@
     align-items: left;
     object-fit: contain;
     padding: 0px;
-    background-color: #242424;
     transition: 1s;
     text-align: center;
     padding-top: 10%;
@@ -91,6 +90,7 @@
   position: relative;
   border-radius: 30px;
   overflow: hidden;
+  height: 500px;
 }
 .proj-imgbx::before {
   content: "";
@@ -113,6 +113,7 @@
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  color: rgb(62, 54, 89);
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -132,9 +133,7 @@
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
-  color: rgb(81, 81, 81);
-  align-items: center;
-  text-align: center;
+  color: rgb(62, 54, 89);
 }
 .background-image-right {
   top: 20%;

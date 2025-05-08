@@ -9,6 +9,10 @@ section {
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;      /* ✅ prevents side-scrolling */     /* ✅ keeps vertical scrolling */
+}
+
 
 .App {
   text-align: center;

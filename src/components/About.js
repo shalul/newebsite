@@ -2,8 +2,6 @@ import '../App.css';
 import './About.css';
 import collage from '../images/collage-pic.png';
 import React, {useState, useEffect} from 'react';
-import Navbar from './Navbar';
-import night from '../images/solid-color-image.png';
 
 function About(){
     const [scrolled, setScrolled] = useState(false);

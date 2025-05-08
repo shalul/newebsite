@@ -96,7 +96,7 @@ h2{
 
   .about-text{
     font-size: 50px;
-    color:#fff;
+    color:#fcf9f5;
     font-family: 'Quicksand', sans-serif;
     padding-top: 20%;
     margin-left: 10%;
@@ -105,15 +105,11 @@ h2{
     flex: 1;
     flex-direction: column;
     display: flex;
-    background-color: rgb(62, 54, 89);
 }
-html{
-    scroll-behavior: smooth;
-  }
 
 .about-text-2{
     font-size: 20px;
-    color:#fff;
+    color:#fcf9f5;
     font-family: 'Quicksand', sans-serif;
     padding-top: 40px;
     padding-bottom: 20%;

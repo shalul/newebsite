@@ -1,7 +1,5 @@
 import React from 'react';
-import Button from './Button';
 import './actfoot.css';
-import logo from "../images/logo.png";
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {

@@ -51,7 +51,7 @@ function Hero(){
             <div className = 'hero-container'>
                     <h1>{`Hi, I'm `} <span className = "wrap">{text}</span></h1>
                     <div className="lineUp">
-                        <p>I'm originally from the Bay Area, California and I'm a senior at the University of Michigan.<br/>
+                        <p>I'm from the Bay Area, California and I'm a senior at the University of Michigan.<br/>
 This is a website showcasing some of my experience in the world of computer science, <br/>as well as a bit of my personality!</p>
                         <h2>(scroll for more)</h2>
                     </div>

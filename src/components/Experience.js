@@ -29,9 +29,8 @@ function WorkExperience() {
       company: "@ University of Michigan",
       dates: "August 2023 – Present",
       bullets: [
-        "Developed, maintained, and shipped production code...",
-        "Performed QA tests to ensure cross-browser compatibility...",
-        "Clients included JetBlue, Lovesac, etc."
+        "Assisted hundreds of students in understanding fundamental programming concepts and coding problems",
+        "Conducted weekly office hours to provide one-on-one tutoring and address student questions"
       ]
     }
   };

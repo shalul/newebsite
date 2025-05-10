@@ -19,7 +19,6 @@ img{
     padding : 0px 0;
     transition: top 1s;
   }
-
   
   .navbar-container {
     display: flex;
@@ -218,4 +217,18 @@ img{
       color: #242424;
       transition: 250ms;
     }
+  }
+
+  .arrow-icon {
+    opacity: 0;
+    transform: translateY(2px);
+    margin-left: 6px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .nav-links:hover .arrow-icon,
+  .nav-links-2:hover .arrow-icon {
+    opacity: 1;
+    transform: translateY(0);
   }

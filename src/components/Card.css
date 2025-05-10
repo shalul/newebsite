@@ -1,3 +1,4 @@
+
 .projects {
   width: 50%;
   height: auto;
@@ -51,7 +52,7 @@
   content: "\2193";
   align-items: center;
   color:#B8B8B8;
-  padding-left: 50%;
+  padding-left: 0%;
   font-size: 45px;
 }
 
@@ -62,7 +63,7 @@
   padding-top: 10%;
   padding-bottom: 50px;
   font-weight: normal;
-  margin: 0 0;
+  margin: 0 10%;
 }
 
 .project p {
@@ -70,7 +71,7 @@
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin:  auto 30px auto;
   text-align: center;
 }
 .nav-link#projects-tabs-tab-first {
@@ -144,13 +145,199 @@
 }
 
 .projects-des{
-  color: white;
+  color: #fcf9f5;
   padding-top: 10px;
   font-family: 'Inter', sans-serif;
   display: flex;
   text-align: center;
 }
 
+.slide-hover-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  height: 500px;
+}
+
+.slide-hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.slide-hover-card:hover img {
+  opacity: 0.2;
+}
+
+.slide-hover-content {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(62, 54, 89);
+  padding: 2rem;
+  transition: right 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.slide-hover-card:hover .slide-hover-content {
+  right: 0;
+}
+
+.slide-hover-content h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.slide-hover-content span {
+  font-size: 16px;
+  font-style: italic;
+}
 
 
+/* .skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  width: 90px; 
+  height: 90px;  
+  flex-shrink: 0;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.skills-scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+  animation: scrollLeft 10s linear infinite;
+  width: fit-content;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+
+.icon-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.icon-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.tech-icon {
+  width: 50px;
+  height: 50px;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+}
+
+.card-hover-wrapper {
+  position: relative;
+  display: inline-block; /* keep it tight around the card */
+}
+
+.tech-slideout {
+  position: absolute;
+  top: 25%;
+  left: 100%; /* start just to the right of the card */
+  height: 100%;
+  width: 200px;
+  color: #fcf9f5;
+  padding: 1rem;
+  transform: translateX(-20px); /* slight offset */
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 10;
+}
+
+/* When hovering the wrapper, reveal the tech panel */
+.card-hover-wrapper:hover .tech-slideout {
+  transform: translateX(20px); /* slide it into view */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tech-slideout ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 30px;
+}
+
+.tech-item {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.card-hover-wrapper:hover .tech-item {
+  animation: fadeInUp 0.4s ease forwards;
+}
+.tech-slideout li {
+  opacity: 0;
+  transform: translateX(10px);
+  font-weight: normal;
+  padding: 20px;
+}
+
+/* Animation definition */
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+
+/* On hover, trigger animations with staggered delays */
+.card-hover-wrapper:hover .tech-slideout li:nth-child(1) {
+  animation: fadeInLeft 0.4s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.card-hover-wrapper:hover .tech-slideout li:nth-child(2) {
+  animation: fadeInLeft 0.4s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.card-hover-wrapper:hover .tech-slideout li:nth-child(3) {
+  animation: fadeInLeft 0.4s ease forwards;
+  animation-delay: 0.5s;
+}
 

@@ -103,7 +103,7 @@ function Navbar() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                    resume
+                    resume <span className="arrow-icon">↗</span>
                     </a>
                 </li>
             </ul>

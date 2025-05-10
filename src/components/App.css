@@ -41,3 +41,52 @@
 html {
   scroll-behavior: smooth;
 }
+
+.left-sidebar, .right-email {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  color: #ccd6f6;
+}
+
+.left-sidebar {
+  left: 40px;
+}
+
+.right-email {
+  right: 40px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.left-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-sidebar li {
+  margin: 10px 0;
+}
+
+.left-sidebar a, .right-email a {
+  color: #ccd6f6;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.left-sidebar a:hover, .right-email a:hover {
+  color: #64ffda;
+}
+
+.left-sidebar ul::after,
+.right-email::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: #ccd6f6;
+}
+

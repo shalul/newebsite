@@ -7,7 +7,7 @@ function Footer() {
         <div className='footer-container'>
             <section className="footer-sub">
                 <div className="footer-left">
-                    Copyright @ 2025 Shalini Krish. With React, Figma, and some love.
+                    Copyright @ 2025 Shalini Krish. With React, Vercel, and some love.
                 </div>
                 <div className="footer-right">
                     <a href="https://github.com/shalul" target="_blank" rel="noopener noreferrer">

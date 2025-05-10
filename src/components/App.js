@@ -1,13 +1,12 @@
 import './App.css';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './pages/Home';
-import About from './About';
-import Contact from './Footer';
+import Home from './components/pages/Home';
+import About from './components/About';
+import Contact from './components/Footer';
 import Resume from './components/Resume';
-import Projects from './Card';
-import ContactForm from './ContactForm'
+import Projects from './components/Card';
 
 
 function App() {

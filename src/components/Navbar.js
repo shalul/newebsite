@@ -46,7 +46,7 @@ function Navbar() {
                 className={scrolled? "navbar-logo-2" : "navbar-logo"}
                 onClick={closeMobileMenu}
             >
-                <img src={logo} alt="Logo" className="footer-logo" /> SHALU
+                <img src={logo} alt="Logo" className="footer-logo" />
             </ScrollLink>
             <div className='menu-icon' onClick = {handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
@@ -60,7 +60,18 @@ function Navbar() {
                     className={scrolled ? 'nav-links-2' : 'nav-links'}
                     onClick={closeMobileMenu}
                 >
-                    About Me
+                    about me
+                </ScrollLink>
+                </li>
+                <li className = 'nav-item' >
+                <ScrollLink
+                    to="experience"
+                    smooth={true}
+                    duration={50}
+                    className={scrolled ? 'nav-links-2' : 'nav-links'}
+                    onClick={closeMobileMenu}
+                >
+                    experience
                 </ScrollLink>
                 </li>
                 <li className = 'nav-item'>
@@ -71,7 +82,7 @@ function Navbar() {
                     className={scrolled ? 'nav-links-2' : 'nav-links'}
                     onClick={closeMobileMenu}
                 >
-                    Projects
+                    projects
                 </ScrollLink>
                 </li>
                 <li className = 'nav-item'>
@@ -82,7 +93,7 @@ function Navbar() {
                     className={scrolled ? 'nav-links-2' : 'nav-links'}
                     onClick={closeMobileMenu}
                 >
-                    Contact Me
+                    contact me
                 </ScrollLink>
                 </li>
                 <li className = 'nav-item'>
@@ -92,7 +103,7 @@ function Navbar() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                    Resume
+                    resume
                     </a>
                 </li>
             </ul>

@@ -1,5 +1,5 @@
 h1{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Coral Pixels', sans-serif;
     font-weight: bold;
     align-items: left;
     color: black;
@@ -13,7 +13,7 @@ h1{
 }
 
 p{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
     align-items: left;
     color: black;
     text-Align: left;
@@ -27,7 +27,7 @@ p{
 
 
 h2{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
     align-items: left;
     color: rgb(221, 166, 255);
     text-Align: left;
@@ -97,7 +97,7 @@ h2{
   .about-text{
     font-size: 50px;
     color:#fcf9f5;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding-top: 20%;
     margin-left: 10%;
     width: 100%;
@@ -110,7 +110,7 @@ h2{
 .about-text-2{
     font-size: 20px;
     color:#fcf9f5;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding-top: 40px;
     padding-bottom: 20%;
     padding-right: 40%;

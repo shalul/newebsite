@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from '../Hero';
 import About from  '../About';
 import Contact from '../Footer';
+import Experience from '../Experience';
 import Footer from '../actfoot';
 import Projects from '../Card';
 
@@ -14,6 +15,9 @@ function Home(){
             </div>
             <div id="about">
                 <About/>
+            </div>
+            <div id="experience">
+                <Experience/>
             </div>
             <div id="projects">
                 <Projects/>

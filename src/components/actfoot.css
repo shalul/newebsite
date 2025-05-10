@@ -1,19 +1,29 @@
 .footer-container {
   background-color: rgb(62, 54, 89);
   padding: 2rem 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: antiquewhite;
   width: 100%;
 }
 
 .footer-sub {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* This ensures that the content is spread between the left and right */
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 auto;
-  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+}
+
+.footer-left {
+  text-align: left; /* Ensures copyright text is aligned to the left */
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end; /* Ensures icons are pushed to the right */
+  align-items: center;
 }
 
 .footer-logo {

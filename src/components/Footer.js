@@ -61,7 +61,7 @@ function Contact (){
         <div className='contact' id='connect'>
     <Container>
         <Row>
-            <h5>Interested? Contact Me</h5>
+            <h5>get in touch :)</h5>
             <Col sm={12} className="px-1"> {/* Full width column for form */}
                 <form ref={formRef} onSubmit={handleSubmit}>
                     <Row>

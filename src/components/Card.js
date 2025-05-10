@@ -26,6 +26,18 @@ function Projects(){
             imgUrl: projImg3,
         }
     ];
+    
+    const skills = [
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "Python", icon: "/icons/python.svg" },
+      { name: "AWS", icon: "/icons/aws.svg" },
+      { name: "Tailwind", icon: "/icons/tailwind.svg" },
+      { name: "Figma", icon: "/icons/figma.svg" },
+      { name: "Git", icon: "/icons/git.svg" },
+      { name: "Node.js", icon: "/icons/nodejs.svg" },
+      // add more as needed
+    ];
+    
     return(
             <section className="project" id="project">
               <Container>
@@ -34,11 +46,12 @@ function Projects(){
                     <TrackVisibility>
                       {({ isVisible }) =>
                       <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                        <h3>Projects</h3>
+                        <h3>some things i've built</h3>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                           <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                             <Tab.Pane eventKey="first">
                               <Row>
+                              <Tab.Pane eventKey="first">
                               {
                                 projects.map((project, index) => (
                                   <Row key={index} className={`zigzag-row ${index % 2 === 0 ? 'left' : 'right'}`}>
@@ -48,6 +61,7 @@ function Projects(){
                                   </Row>
                                 ))
                               }
+                              </Tab.Pane>
                               </Row>
                             </Tab.Pane>
                           </Tab.Content>

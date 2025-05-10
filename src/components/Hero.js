@@ -1,14 +1,13 @@
 import {Button} from './Button'
 import '../App.css';
 import './Hero.css';
-import moar from '../images/last.png';
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+
 
 function Hero(){
     const [loopNum, setLoopNum] = useState(0);
     const[isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["A Student", "An Artist", "A Coder", "Shalini Krish ✌️."];
+    const toRotate = ["a student", "an artist", "a coder", "shalini krish ✌️."];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random()* 100);
     const period = 500;
@@ -28,7 +27,7 @@ function Hero(){
 
         setText(updateText);
 
-        if(fullText === "Shalini Krish ✌️."){
+        if(fullText === "shalini krish ✌️."){
             return 0;
         }
 
@@ -49,11 +48,10 @@ function Hero(){
     return (
         <div>
             <div className = 'hero-container'>
-                    <h1>{`Hi, I'm `} <span className = "wrap">{text}</span></h1>
+                    <h1>{`hi, i'm `} <span className = "wrap">{text}</span></h1>
                     <div className="lineUp">
-                        <p>I'm from the Bay Area, California and I'm a senior at the University of Michigan.<br/>
-This is a website showcasing some of my experience in the world of computer science, <br/>as well as a bit of my personality!</p>
-                        <h2>(scroll for more)</h2>
+                        <p>located in the bay area, CA, and a senior at the university of michigan.<br/>
+dive into my world with me.</p>
                     </div>
                     
             </div>

@@ -1,20 +1,13 @@
-.projects{
-    width: 50%;
-    height: 10;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: left;
-    object-fit: contain;
-    padding: 0px;
-    transition: 1s;
-    text-align: center;
-    padding-top: 10%;
-}
-
-.card-wrapper {
-  width: 60%; /* adjust as needed: 40–80% */
-  max-width: 700px;
+.projects {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  object-fit: contain;
   text-align: center;
+  padding: 0;
+  transition: 1s;
 }
 
 .zigzag-row {
@@ -22,7 +15,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  width: 50;
+  width: 100%; /* or 80% depending on your layout */
+}
+.card-wrapper {
+  width: 60%; /* adjust as needed: 40–80% */
+  max-width: 700px;
+  text-align: center;
 }
 
 .zigzag-row.left {
@@ -35,18 +33,17 @@
 
 .project {
   position: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 900;
   background-color: rgb(62, 54, 89);
   flex-direction: column;
-  padding-top: 15%;
   padding-bottom: 15%;
 }
 .project h2 {
 	font-size: 45px;
 	font-weight: 900;
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   
 }
 
@@ -60,12 +57,14 @@
 
 .project h3 {
 	font-size: 45px;
-  text-align: center;
-  color: white;
-  font-family: 'Quicksand', sans-serif;
+  color: #fcf9f5;
+  font-family: 'Inter', sans-serif;
   padding-top: 10%;
   padding-bottom: 50px;
+  font-weight: normal;
+  margin: 0 0;
 }
+
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -147,17 +146,11 @@
 .projects-des{
   color: white;
   padding-top: 10px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   text-align: center;
 }
 
-.projecth3{
-  color: white;
-  padding-top: 10%;
-  font-family: 'Quicksand', sans-serif;
-  text-align: center;
-}
 
 
 

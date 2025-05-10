@@ -10,8 +10,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     position: sticky;
     top: 0;
@@ -23,15 +23,15 @@ img{
   
   .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* changed from center */
     align-items: center;
     height: 80px;
-    max-width: 1000px;
-    padding-top: 10px;
-  }
+    width: 100%;
+    padding: 30px 30px; /* optional: adds spacing on sides */
+  }  
 
   .navbar-logo:hover{
-    color: rgb(221, 166, 255);
+    transform: perspective(600px) rotateX(360deg);
   }
   
   .navbar-logo {
@@ -43,6 +43,8 @@ img{
     font-size: 2rem;
     display: flex;
     align-items: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
   }
 
   .navbar-logo-2 {
@@ -54,8 +56,9 @@ img{
     font-size: 2rem;
     display: flex;
     align-items: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
   }
-
 .scrolled{
     padding : 0px 0;
     background-color: rgb(62, 54, 89);
@@ -65,7 +68,7 @@ img{
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     position: sticky;
     top: 0;
@@ -79,7 +82,7 @@ img{
   }
   
   .nav-menu {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
@@ -90,6 +93,7 @@ img{
   
   .nav-item {
     height: 80px;
+    font-family: "Inter", sans-serif;
   }
   
   .nav-links {
@@ -99,7 +103,7 @@ img{
     text-decoration: none;
     padding: 1rem 1.5rem;
     height: 100%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
   .nav-links-2 {
@@ -109,7 +113,7 @@ img{
     text-decoration: none;
     padding: 1rem 1.5rem;
     height: 100%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   
 
@@ -176,7 +180,7 @@ img{
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(0%);
     }
   
     .menu-icon {
